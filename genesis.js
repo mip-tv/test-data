@@ -21,5 +21,11 @@ module.exports = {
     },
     counter: () => {
         return Math.floor(Math.random()*(10000-500))+500;
+    },
+    color: () => {
+        let r = Math.floor(Math.random()*255).toString(16);
+        let g = Math.floor(Math.random()*255).toString(16);
+        let b = Math.floor(Math.random()*255).toString(16);
+        return "#".concat(r,g,b);
     }
 };
