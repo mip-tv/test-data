@@ -18,5 +18,8 @@ module.exports = {
     },
     time: () => {
         return Date.now() - Math.floor(Math.random()*437431344);
+    },
+    counter: () => {
+        return Math.floor(Math.random()*(10000-500))+500;
     }
 };
