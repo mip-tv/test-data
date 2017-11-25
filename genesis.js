@@ -6,5 +6,17 @@ module.exports = {
     },
     lat: () => {
         return Math.floor((Math.random()*180-90)*1000000)/1000000;
+    },
+    uri: () => {
+        return "image:https://mate-ist-toll.org/"+(Math.floor(Math.random()*(3483948394-1000000))+1000000).toString();
+    },
+    ip: () => {
+        return (Math.floor(Math.random()*(254-2))+2).toString()
+                +"."+(Math.floor(Math.random()*(254-2))+2).toString()
+                +"."+(Math.floor(Math.random()*(254-2))+2).toString()
+                +"."+(Math.floor(Math.random()*(254-2))+2).toString();
+    },
+    time: () => {
+        return Date.now() - Math.floor(Math.random()*437431344);
     }
 };
